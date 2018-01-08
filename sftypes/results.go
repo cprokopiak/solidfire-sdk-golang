@@ -63,8 +63,8 @@ type CreateVolumeAccessGroupResult struct {
 }
 
 type CreateVolumeResult struct {
-	VolumeID int64 `json:"volumeID"`
-	Curve    int64 `json:"curve"`
+	VolumeID int64    `json:"volumeID"`
+	Curve    QoSCurve `json:"curve"`
 }
 
 type FibreChannelPortInfoResult struct {
@@ -399,7 +399,7 @@ type ModifyClusterFullThresholdResult struct {
 }
 
 type ModifyVolumeResult struct {
-	Curve int64 `json:"curve"`
+	Curve QoSCurve `json:"curve"`
 }
 
 type NodeFibreChannelPortInfoResult struct {

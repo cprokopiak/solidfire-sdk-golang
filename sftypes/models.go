@@ -463,6 +463,18 @@ type QoS struct {
 	BurstTime int64 `json:"burstTime,omitempty"`
 }
 
+type QoSCurve struct {
+	B4096    string `json:"4096,omitempty"`
+	B8192    string `json:"8192,omitempty"`
+	B16384   string `json:"16384,omitempty"`
+	B32768   string `json:"32768,omitempty"`
+	B65536   string `json:"65536,omitempty"`
+	B131072  string `json:"131072,omitempty"`
+	B262144  string `json:"262144,omitempty"`
+	B524288  string `json:"524288,omitempty"`
+	B1048576 string `json:"1048576,omitempty"`
+}
+
 type RemoteReplication struct {
 	Mode                string              `json:"mode"`
 	PauseLimit          int64               `json:"pauseLimit"`
